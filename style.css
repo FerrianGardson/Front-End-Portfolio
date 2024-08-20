@@ -1,0 +1,192 @@
+h1,
+h2 {
+  font-family: Unbounded;
+  overflow-wrap: break-word;
+  line-height: normal;
+}
+h1 {
+  font-size: 2.2rem;
+  color: var(--color-red);
+}
+h2 {
+  font-size: 2rem;
+  color: var(--color-black);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+body {
+  margin: 0;
+}
+
+section.navbar {
+  padding: 1rem;
+  background: #000000d4;
+  /* position: fixed; */
+  z-index: 99;
+  backdrop-filter: blur(4px);
+}
+
+a {
+  color: var(--color-red);
+}
+
+section.navbar a {
+  color: white;
+}
+
+body {
+  font-family: var(--font-family-main);
+  display: flex;
+  flex-direction: column;
+  line-height: 140%;
+}
+
+a.button {
+  background: var(--color-red);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 4px;
+}
+
+.nowrap {
+  flex-flow: nowrap;
+}
+
+section > * {
+  margin: auto;
+  width: var(--content-width);
+}
+
+a.button:hover {
+  background: var(--color-hover);
+}
+
+a.button.larger {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}
+
+section {
+  padding: 9rem 1rem;
+  /* width: 100% !important; */
+  overflow: hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 2rem;
+}
+
+section.desktop div.text {
+  position: relative;
+  top: 1.5rem;
+}
+
+.desktop h2 {
+  position: relative;
+  top: -1.1rem;
+}
+
+section.bg.light {
+  background: url(img/section_bg.jpg);
+  background-size: cover;
+}
+
+.text {
+  min-width: 45%;
+}
+
+.text.two {
+  width: 20rem;
+}
+
+.spread {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.social {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+}
+
+ul {
+  list-style: square outside;
+  padding-left: 1rem;
+}
+
+.resume .text {
+  /* width: 36rem; */
+}
+
+.selfie .text {
+  width: 690px;
+}
+
+.selfie .pic {
+  /* width: 490px; */
+}
+
+a.case > img {
+  width: 390px;
+  /* filter: saturate(0.5) opacity(0.5); */
+}
+
+.bg.dark {
+  background: url(img/shards.png) black;
+}
+
+.shards > .row.align {
+  transform: scale(0.8);
+}
+
+.dark h2, .dark p {
+  color: white;
+}
+
+a.case > img:hover {
+  filter: saturate(1);
+}
+
+img {
+  max-width: 100%;
+}
+
+.screen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* width: fit-content; */
+  gap: 2rem;
+}
+
+div {
+  max-width: -webkit-fill-available;
+}
+
+.text {
+    width: 690px;
+    z-index: 1;
+}
+
+.pic {
+    width: 390px;
+}
+
+  img {
+    transition: transform 0.3s ease-in-out;
+  }
